@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
 
 import "@/scss/index.scss";
-import Layout from "@comp/layout";
+import Layout from "@comp/Layout";
 
 const Home = lazy(() => import("@pages/Home"));
 const AboutPage = lazy(() => import("@/pages/AboutPage"));
