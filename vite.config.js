@@ -1,10 +1,9 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
 export default defineConfig({
-    plugins: [react()],
-    resolve: {
+  plugins: [react()], resolve: {
         alias: {
             "@": "/src",
             "@comp": "/src/components",
@@ -13,7 +12,6 @@ export default defineConfig({
             "@hooks": "/src/hooks",
             "@utils": "/src/utils",
             "@assets": "/src/assets",
-            "@types": "/src/types",
         },
     },
-});
+})

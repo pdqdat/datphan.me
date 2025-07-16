@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 
-const PageTitle = ({ title }: { title: string }) => {
+const PageTitle = ({ title }) => {
     const location = useLocation();
 
     // Change the document title whenever the location or title changes

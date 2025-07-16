@@ -1,0 +1,10 @@
+.rounded {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+// Style for the <em> tag, aka emphasis text
+em {
+    font-style: italic;
+    background: var(--color-highlight);
+}

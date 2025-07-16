@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 
 import PageTitle from "@comp/PageTitle";
-import "./AboutPage.scss";
+import styles from "./AboutPage.module.scss";
 
 const AboutPage = () => {
     return (
@@ -16,7 +16,7 @@ const AboutPage = () => {
                 Based in HCMC
             </motion.p>
             <motion.h3 initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.6 }}>
-                Dat Phan on <span className="highlight">Socials</span>
+                Dat Phan on <span className={styles.highlight}>Socials</span>
             </motion.h3>
             <ul>
                 <motion.li initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.8 }}>

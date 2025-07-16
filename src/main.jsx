@@ -2,11 +2,11 @@ import { StrictMode, lazy } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
 
-import "@/index.scss";
-import Layout from "@comp/Layout";
+import "@/scss/index.scss";
+import Layout from "@comp/layout";
 
-const App = lazy(() => import("@comp/App.tsx"));
-const AboutPage = lazy(() => import("@/pages/AboutPage.tsx"));
+const Home = lazy(() => import("@pages/Home"));
+const AboutPage = lazy(() => import("@/pages/AboutPage"));
 
 const router = createBrowserRouter([
     {
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <App />,
+                element: <Home />,
             },
             {
                 path: "/about",
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     },
 ]);
 
-createRoot(document.getElementById("root")!).render(
+createRoot(document.getElementById("root")).render(
     <StrictMode>
         <RouterProvider router={router} />
     </StrictMode>
